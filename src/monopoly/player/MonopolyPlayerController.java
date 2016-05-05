@@ -18,9 +18,9 @@ public class MonopolyPlayerController {
     
     @Inject
     public MonopolyPlayerController(AbstractMonopolyPlayer playerOne, AbstractMonopolyPlayerBot playerTwo) {
-        currentPlayer = playerOne;
         playerTurns.add(playerOne);
         playerTurns.add(playerTwo);
+        currentPlayer = playersIterator.next();
     }
     
     public void advanceTurn() {

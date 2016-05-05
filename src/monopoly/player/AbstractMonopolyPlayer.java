@@ -1,10 +1,13 @@
 package monopoly.player;
 
+import monopoly.board.MonopolyBoard;
+
 public abstract class AbstractMonopolyPlayer { 
     
+    private final MonopolyBoard monopolyBoard = MonopolyBoard.getInstance();
     public abstract boolean isHuman();
     
     public void updateBoardPosition(int diceRoll) {
-        System.out.println("Updating board position for dice roll" + diceRoll);
+        monopolyBoard.updateBoardPosition(this, diceRoll);
     }
 }
