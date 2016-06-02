@@ -10,6 +10,7 @@ public class MonopolyActionFactory {
         monopolyActions = new HashMap<>();
         monopolyActions.put("roll-dice", new DiceRollAction());
         monopolyActions.put("end-turn", new EndTurnAction());
+        monopolyActions.put("buy-property", new BuyPropertyAction());
     }
     
     private MonopolyActionFactory () {}

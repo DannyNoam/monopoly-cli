@@ -12,6 +12,7 @@ public class ConsoleInput implements AbstractInput {
         consoleParser.parse("end-turn");
         consoleParser.parse("roll-dice");
         consoleParser.parse("end-turn");
+        consoleParser.parse("buy-property");
     }
     
 }

@@ -30,4 +30,8 @@ public class MonopolyPlayerController {
     public void setPlayerDiceRoll(int rollNumber) {
         currentPlayer.updateBoardPosition(rollNumber);
     }
+    
+    public void buyProperty() {
+        currentPlayer.buyProperty();
+    }
 }
